@@ -1,2 +1,2 @@
-# Webprogramming I.
-## [Készítés alatt álló portfólió...](https://programmergnome.github.io/portfolio/)
+## Webprogramozás I. beadandó keretében készült weboldal.
+## [Az alábbi link alatt érhető el...](https://programmergnome.github.io/portfolio/)
