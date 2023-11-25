@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ProgrammerGnome's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body style="
+    background-color:midnightblue;
+">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="">| Programmer<span>Gnome |</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="navbar-brand" href="">HU |</a>
+                <a class="navbar-brand" href="index_EN.html">EN |</a>
+            <li>
+                <a class="nav-link" href="#szakmai_ismeretek">- Szakmai ismeretek</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#fobb_hobbi_projektek">- Főbb hobbi projektek</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#szakmai_tapasztalat">- Szakmai tapasztalat</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#oktatas">- Oktatás</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#yt-header">- Másegyéb</a>
+            </li>
+            <!-- TODO: Itt folytatható -->
+        </ul>
+    </div>
+</nav>
+
+<div id="typing-container"></div>
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <!-- Bal oldali oldalsáv -->
+        <div class="col-md-3">
+            <div class="bg-transparent p-3">
+                <h3>Bemutatkozás</h3>
+                Király Márknak hívnak. Jelenleg még csak hallgató vagyok. Érdeklődési területeim közé
+                tartozik a szoftverfejlesztés, a linux rendszerek, mély neurális hálózatok, valamint ezek matematikai
+                háttere.
+                <p>---------------------------------------------------------------------------------</p>
+                <h2 class="text-center">ELÉRHETŐSÉGEK</h2>
+                <table class="mx-auto">
+                    <tr>
+                        <td class="text-center">
+                            <strong>Király Márk</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <a href="https://www.facebook.com/kiraly.mark.54584"><img
+                                    src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" width="30px"
+                                    height="30px"></a>
+                            <a href="https://github.com/ProgrammerGnome"><img
+                                    src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" width="30px"
+                                    height="30px"></a>
+                            <a href="https://www.linkedin.com/in/programmergnome/"><img
+                                    src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/linkedin.svg"
+                                    width="30px" height="30px"></a>
+                            <a href="https://pemonline.hu/author/kiraly-mark/"><img
+                                    src="images/pem_logo.png" width="30px"
+                                    height="30px"></a>
+                        </td>
+                    </tr>
+                </table>
+                <p>---------------------------------------------------------------------------------</p>
+                <div class="mt-4">
+                    <h4>GitHub profil statisztika:</h4>
+                    <p>
+                        <img align="center"
+                             src="https://github-readme-stats.vercel.app/api/top-langs?username=programmergnome&show_icons=true&locale=en&layout=compact"
+                             alt="programmergnome">
+                    </p>
+                </div>
+                <div class="file-accordion">
+                    <div class="file-item">
+                        <div class="file-header" onclick="toggleAccordion(1)">
+                            <div class="file-icon">📁</div>
+                            Készülő félben lévő jegyzetek, dokumentumok
+                        </div>
+                        <div class="file-content">
+                            <a href="https://github.com/ProgrammerGnome/MyMathPapers/blob/main/FLexcercisesV1.pdf">Formális
+                                nyelvek és automaták példatár</a><br>
+                            <a href="https://github.com/ProgrammerGnome/MyMathPapers/blob/main/2023-01-21-Jegyzet-14-38.pdf">Valszám</a>,
+                            <a href="https://github.com/ProgrammerGnome/MyMathPapers/blob/main/2023-01-22-Jegyzet-16-30.pdf">Valszám
+                                folytatás</a>
+                        </div>
+                    </div>
+                    <div class="file-item">
+                        <div class="file-header" onclick="toggleAccordion(2)">
+                            <div class="file-icon">📁</div>
+                            Elkészült jegyzetek, dokumentumok
+                        </div>
+                        <div class="file-content">
+                            Még nincs tartalom feltöltve.
+                        </div>
+                    </div>
+                    <!-- TODO: Itt folytatható -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Fő tartalom -->
+        <div class="col-md-6">
+            <div class="container-stack" id="szakmai_ismeretek">
+                <h1><br><br><br>Szakmai ismeretek</h1>
+                <div class="mt-4">
+                    <h3>Alapvetően, általánosságban:</h3>
+                    <p>
+                        <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+                                 alt="c" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                                 alt="cplusplus" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.qt.io/" target="_blank" rel="noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt"
+                                 width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" alt="vue.js" width="40"
+                                 height="40" class="me-2">
+                        </a>
+                        <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+                            <img src="https://bashlogo.com/img/symbol/svg/monochrome_dark.svg" alt="bash"
+                                 width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                                 alt="linux" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://cloud.google.com" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"
+                                 alt="gcp" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://developer.android.com" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
+                                 alt="android" width="40" height="40" class="me-2">
+                        </a>
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <h3>Munkaképp:</h3>
+                    <p>
+                        <a href="https://www.java.com" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                                 alt="java" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://spring.io/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring"
+                                 width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                                 alt="postgresql" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://backbonejs.org/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/backbonejs/backbonejs-icon.svg"
+                                 alt="java" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://jquery.com/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/jquery/jquery-vertical.svg" alt="jquery"
+                                 width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://postman.com" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman"
+                                 width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt=git" width="40"
+                                 height="40" class="me-2">
+                        </a>
+                        <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                                 alt="python" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                                 alt="bootstrap" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                                 alt="html5" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                                 alt="css3" width="40" height="40" class="me-2">
+                        </a>
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <h3>Szórakozásképpen:</h3>
+                    <p>
+                        <a href="https://www.nasm.us/" target="_blank" rel="noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Netwide_Assembler.svg"
+                                 alt="nasm-assembly"
+                                 width="70" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.swi-prolog.org/" target="_blank" rel="noreferrer">
+                            <img src="https://www.svgrepo.com/show/372928/prolog.svg"
+                                 alt="swi-prolog" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.haskell.org/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/haskell/haskell-vertical.svg" alt="haskell"
+                                 width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.yesodweb.com/" target="_blank" rel="noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Yesod_Logo.svg"
+                                 alt="yesod-web-framework-for-haskell" width="80" height="45" class="me-2">
+                        </a>
+                        <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg"
+                                 alt="python-django" width="60" height="40" class="me-2">
+                        </a>
+                        <a href="https://numpy.org/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/gilbarbara/logos/f133ea921b012052000964e3feb023b57146895b/logos/numpy.svg"
+                                 alt="python-numpy"
+                                 width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://www.tensorflow.org/" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"
+                                 alt="python-tensorflow" width="40" height="40" class="me-2">
+                        </a>
+                        <a href="https://coq.inria.fr/" target="_blank" rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/file-icons/icons/e6e6e6ac8cb1d91867167c228c00a667f4d47101/svg/Coq.svg"
+                                 alt="coq-proof-assistant" width="40" height="40" class="me-2">
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="fobb_hobbi_projektek">
+                <h1 class="ujszin">Főbb hobbi projektek:</h1>
+                <h5 class="feherBetu">Hobbi projektjeim során igyekszem a való élet feladataira megoldást keresni.</h5>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                            Adminisztratív terheket csökkentő full-stack webalkalmazás (Java, Spring, JasperReport,
+                            Backbone.js)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Ez a szoftver egy böngészős felülettel rendelkezik, melyet kitöltve Postgres vagy H2DB
+                                adatbázisba menti a kapott adatokat (application.properties-ben szabadon változtatható),
+                                azokon szintaktikai, fozmázási műveleteket végez, majd előállít belőle egy kinyomtatható
+                                űrlapot, melyet a felhasználó a böngészőjében letölthet.
+                            </p>
+                            <h6>Státusz: teljesen elkészült</h6>
+                            <h6>GitHub link: <a href="https://github.com/ProgrammerGnome/UtikoltsegSoftwareHU">https://github.com/ProgrammerGnome/UtikoltsegSoftwareHU</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                            PEditor: asztali szövegszerkesztő alkalmazás esszéírást segítő funkciókkal (C++, Qt)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Az alábbi szoftver egy egyszerű szövegszerkesztő C++ nyelven, mely metódusai
+                                megszámolják a szövegben az aktuális 5 leggyakoribb szavat. A grafikus megjelenítést a
+                                Qt keretrendszer segítségével végzi el.
+                            </p>
+                            <h6>Státusz: elkészült, de még lehetne hová fejleszteni</h6>
+                            <h6>GitHub link: <a href="https://github.com/ProgrammerGnome/PEditor">https://github.com/ProgrammerGnome/PEditor</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                            KöMaL S.141. probléma (lényegileg párhuzamosítás) megoldása C++ nyelven.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                A feladványból egész egyszerűen matematikai modellt készítve, megpróbáljuk azt
+                                párhuzamosítani. Fontos, hogy nem a kiszámolásra, hanem a nagy számok esetén végzett
+                                gyors kiszámolásra törekszünk.
+                            </p>
+                            <h6>Státusz: megoldva</h6>
+                            <h6>GitHub link: <a href="https://github.com/ProgrammerGnome/Problem-S.141">https://github.com/ProgrammerGnome/Problem-S.141</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                            Költségvetési alkalmazás (Java, SWING gui, XML, Google Drive API)
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Ez az alkalmazás egy XML fájlban ill. internetkapcsolat esetén azt Google Drive-on,
+                                annak hiányában pedig a számítógépen tárolja a megadott kiadásokat, bevételeket.
+                                Ezekből statisztikákat készít, melyet akár .xlsx formátumú Excel táblára is tud
+                                konvertálni, amit a felhasználó kiexportálhat.
+                            </p>
+                            <h6>Státusz: teljesen elkészült, nincs fejlesztés alatt</h6>
+                            <h6>GitHub link: <a
+                                    href="https://github.com/ProgrammerGnome/Economical-desktop-app-with-GoogleDriveAPI">https://github.com/ProgrammerGnome/Economical-desktop-app-with-GoogleDriveAPI</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                            KöMaL S.20. probléma (minimumprobléma) megoldása Python nyelven
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Ez volt a legelső érdemi GitHub projektem.
+                                A feladat egy, a síkon adott n darab pontot lefedő, legkisebb területű kör megtalálása.
+                                A probléma megoldási eszközei kezdetlegesek, viszont éppen emiatt összetettek.
+                            </p>
+                            <h6>Státusz: megoldva</h6>
+                            <h6>GitHub link: <a href="https://github.com/ProgrammerGnome/Problem-S.20">https://github.com/ProgrammerGnome/Problem-S.20</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO: Itt folytatható -->
+            </div>
+
+            <br>
+            <div class="card" id="szakmai_tapasztalat">
+                <h1>Szakmai tapasztalat:</h1>
+                <div class="card-body">
+                    <h5 class="card-title">Projektek</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h6><b>InnoTeq Kft. - szoftverfejlesztés</b></h6>
+                            <p>2023.szeptember - jelenleg, megbízási szerződéssel</p>
+                            <p>Részvétel backend-es feladatokon egy erdőgazdálkodási kutatáshoz szükséges
+                                szoftver elkészítésénél. [Tech: Java, Spring, Postgres, Hibernate]</p>
+                            <a href="https://innoteq.hu">elérhetőség</a>
+                        </li>
+                        <li class="list-group-item">
+                            <h6><b>Rail Navigator Kft. - szoftverfejlesztés, szoftvertesztelés</b></h6>
+                            <p>2023.június - jelenleg</p>
+                            <p>Részvétel backend-es feladatokon egy vasúti teherszállítással kapcsolatos
+                                nagy komplexitású szoftver fejlesztésénél, valamint unit tesztek tervezésénél és
+                                implementálásuknál. [Tech: Java, Spring, Postgres, JUnit, Mockito]</p>
+                            <a href="https://www.railnavigator.hu">elérhetőség</a>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Rail Navigator Kft.</h6>
+                            <p>KÖTELEZŐ SZAKMAI GYAKORLAT (2023 április - május) <br> [Tech: Java, Spring, Postgres,
+                                JUnit, Mockito, Vue.js, Backbone.js, JQuery]</p>
+                        </li>
+                        <!-- TODO: Itt folytatható -->
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card-oktatas" id="oktatas">
+                <h1>Oktatás:</h1>
+                <div class="card-body">
+                    <div class="ujszin">
+                        <h5 class="card-title">Programtervező informatikus BSc <br> (2021.szeptember - jelenleg)</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Pécsi Tudományegyetem Természettudományi
+                            Kar</h6>
+                    </div>
+                    <br><br><br>
+                    <a href="https://www.ttk.pte.hu" class="card-link ujszin">Az intézmény honlapja</a>
+                </div>
+            </div>
+
+            <div class="yt-header" id="yt-header">
+                <br>
+                <h1>
+                    <a href="https://www.youtube.com/@programmergnome3720"><img
+                            src="https://cdn.worldvectorlogo.com/logos/youtube-icon-5.svg" width="50px"
+                            height="50px"></a>
+                    Egyéb felhasználható tartalom:
+                </h1>
+                <h4>YouTube-on a következő általam készített oktató jellegű videósorozatok érhetőek el:</h4>
+                <ul>
+                    <li>
+                        KöMaL és középiskolai matek: 5 db videó
+                    </li>
+                    <li>
+                        Analízis I.: 1 db videó
+                    </li>
+                    <li>
+                        Analízis II.: 7 db videó
+                    </li>
+                </ul>
+                <h5>Fontos megjegyezni, hogy a videók régebben készültek, és valamint a rendelkezésre álló
+                    technikai feltételek miatt a hangminőségük elég gyér.</h5>
+                <br>
+            </div>
+
+            <dl class="yt-container">
+                <iframe width="420" height="345"
+                        src="https://www.youtube.com/embed/videoseries?list=PLoeadHFP8LcO7Y0cOsgxZHk6Fdf7Jjj3q"
+                        allowfullscreen>
+                </iframe>
+                <iframe width="420" height="345"
+                        src="https://www.youtube.com/embed/videoseries?list=PLoeadHFP8LcNM-X0GQgLMrsMJF3gLAcXX"
+                        allowfullscreen>
+                </iframe>
+                <iframe width="420" height="345"
+                        src="https://www.youtube.com/embed/videoseries?list=PLoeadHFP8LcOV1QZ85NNjKmhRA0ehDI5Q"
+                        allowfullscreen>
+                </iframe>
+            </dl>
+            <br><!-- <br><br><br><br><br><br><br><br><br> -->
+        </div>
+
+        <!-- Jobb oldali oldalsáv -->
+        <div class="col-md-3">
+            <div class="bg-transparent p-3">
+                <h3>Szabadidő</h3>
+                <p>Az alábbiakban pár olyan dolgot mutatok be mellékesen, amik sokak számára érdesek lehetnek.
+                    Főleg a természetfotóimmal szeretném megköszönni, hogy ellátogattál az oldalamra.</p>
+                <p>A képek bezárásához csak kattints a megnyitott kép feletti részre.</p>
+            </div>
+            <b>Természetfotók</b>
+            <br>
+            <div class="gallery" id="gallery"></div>
+            <div class="modal" id="modal">
+                <img class="modal-content" id="modalImage">
+            </div>
+            <br>
+            <b>Egyéb "kreatív" dolgok</b>
+            <br>
+            <div class="gallery" id="gallery2"></div>
+            <div class="modal" id="modal2">
+                <img class="modal-content" id="modalImage2">
+            </div>
+            <br>
+            <b>Videojátékok</b>
+            <div class="file-accordion_v2">
+                <div class="file-item_v2">
+                    <div class="file-header_V2" onclick="toggleAccordion_v2(1)">
+                        <div class="file-icon_v2">📁</div>
+                        Videojátékos tartalmak
+                    </div>
+                    <div class="file-content_v2">
+                        <h5>Minecraft mapok:</h5>
+                        <p>Ezek kreatív módban épült mapok, melyek túlélő játékra lettek megalkotva,
+                            és tetszés szerint testre szabhatóak: </p>
+                        <a href="https://drive.google.com/file/d/1OdpBpvnEIom_dVnk2F-2SMO-YcDDCOJ7/view?usp=drive_link">JungelDorf
+                            (1.16.1)</a><br>
+                        <a href="https://drive.google.com/file/d/1o-bLLee1ZboyjZedUOuv4lj39mZI3CU0/view?usp=drive_link">KohlStadt
+                            (1.12.2)</a><br>
+                        <a href="https://drive.google.com/file/d/1WR8KGh64QS-18x9PHnN3_kjAF90Ac8Ae/view?usp=drive_link">LopoPolis
+                            (1.14.2)</a><br>
+                        <a href="https://drive.google.com/file/d/10s0DJbGkjcDV_YmHBZJdrgEPU_C9mvZ2/view?usp=drive_link">Frei&Turm
+                            (1.19)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="mt-1">
+    <div class="text-center">
+        Copyright &copy; 2023, ProgrammerGnome's website
+        <br>
+        Az oldal utoljára frissítve: 2023-11-25
+    </div>
+</div>
+
+</body>
+</html>

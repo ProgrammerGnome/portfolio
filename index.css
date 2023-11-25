@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700'); /* Általános stílusok */
+
+/* Navigációs fejléc */
+.navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Oldalsávok */
+.col-md-3 {
+    background-color: white;
+    height: fit-content;
+}
+
+.container-stack {
+    background-image: url("images/oldMonitor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.mt-4 {
+    text-align: center;
+    vertical-align: top;
+}
+
+.container-docs {
+    background-color: lightcyan;
+    padding-bottom: 2%;
+}
+
+.yt-header {
+    color: white;
+}
+
+#typing-container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
+
+.card {
+    background-image: url("images/keyboard.jpg");
+    background-color: #5a6268;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-oktatas {
+    background-image: url("images/educ.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.ujszin {
+    background-color: white;
+    text-align: center;
+}
+
+.feherBetu {
+    color: white;
+    text-align: left;
+}
+
+.list-group-item {
+    width: 75%;
+}
+
+.yt-container {
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 1%;
+}
+
+/* Footer */
+#footer {
+    color: black;
+    background-color: rgb(230, 223, 207);
+    font-size: 92%;
+    text-align: center;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 1em 4mm;
+    clear: both;
+}
+
+#footer a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+/* */
+.file-accordion {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.file-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.file-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.file-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.file-content {
+    display: none;
+    padding: 10px;
+}
+
+/* */
+.file-accordion_v2 {
+    max-width: 400px;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.file-item_v2 {
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.file-header_V2 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.file-icon_v2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.file-content_v2 {
+    display: none;
+    padding: 10px;
+}
+
+
+/* */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30%);
+    row-gap: 2%;
+    column-gap: 2%;
+    padding: 0.5%;
+    float: inherit;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    align-items: center;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 10%;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
