@@ -1,3 +1,23 @@
+.email-link {
+  color: #A9A9CB;
+  text-decoration: none; /* ha nem akarod az aláhúzást */
+}
+
+.email-link:hover {
+  text-decoration: underline; /* opcionális hover effekt */
+}
+
+/* Particles backgorund */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -50; /* Háttérben marad */
+  background-color: #1a1a1a;
+}
+
 /* Basic Reset for consistent styling */
 body {
     margin: 0;
@@ -6,6 +26,10 @@ body {
     color: #9090B0; /* Light Blue text color (Midnight Minimal) */
     line-height: 1.6;
     padding-top: 20px; /* Add padding at the top to prevent content touching the edge */
+    
+    background: #1a1a1a; /* Dark background */
+    position: relative; /* Needed for particle positioning */
+    min-height: 100vh;
 }
 
 /* Header Styling */
@@ -184,6 +208,9 @@ body {
     border: 2px solid #9090B0; /* Light Blue border for content area (Midnight Minimal) */
     background-color: #1F1F4D; /* Medium Blue background for content (Midnight Minimal) */
     box-shadow: 0 0 15px #1F1F4D; /* Medium Blue glowing shadow (Midnight Minimal) */
+    
+    position: relative; /* Ensure content stays above particles */
+    z-index: 1;
 }
 
 .content-section {
@@ -253,7 +280,7 @@ body {
     height: 30px; /* Set the height of the company logo (from user snippet) */
     margin-right: 10px; /* Space after the logo */
     object-fit: contain;
-    border: 1px solid #9090B0; /* Light blue border (Midnight Minimal) */
+    /*border: 1px solid #9090B0; /* Light blue border (Midnight Minimal) */
     flex-shrink: 0; /* Prevent logo from shrinking */
 }
 
@@ -372,12 +399,23 @@ body {
 .project-item .github-icon {
     width: 24px; /* Set the width of the icon */
     height: 24px; /* Set the height of the icon */
+    padding-left: 10px;
+    filter: invert(70%) sepia(100%) saturate(2000%) hue-rotate(180deg) brightness(100%) contrast(100%); /* Example: Style the icon to match theme */
+    /* Adjust filter based on your icon's original color */
+}
+.project-item .aur-icon {
+    width: 24px; /* Set the width of the icon */
+    height: 24px; /* Set the height of the icon */
+    padding-left: 25px;
     filter: invert(70%) sepia(100%) saturate(2000%) hue-rotate(180deg) brightness(100%) contrast(100%); /* Example: Style the icon to match theme */
     /* Adjust filter based on your icon's original color */
 }
 
 /* Optional: Hover effect for the GitHub icon */
 .project-item .github-link:hover .github-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Example: Change icon color on hover (White) */
+}
+.project-item .github-link:hover .aur-icon {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Example: Change icon color on hover (White) */
 }
 
@@ -518,7 +556,13 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 }
-  
+
+
+
+
+
+
+
 /* Skill Card Container */
 .skill-card {
     perspective: 1000px;
@@ -607,6 +651,12 @@ body {
     line-height: 1.4;
     font-size: 0.9em;
 }
+
+
+
+
+
+
 
 /* Styling for Education Section Items */
 .education-item {
@@ -720,6 +770,12 @@ body {
     margin-bottom: 8px;
     line-height: 1.5;
 }
+
+li2 {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
 
 
 /* Ensure last item in a section doesn't have bottom margin */
@@ -1018,6 +1074,5 @@ body {
     .course-item .course-points {
          padding-left: 20px; /* Adjust padding */
     }
-
 
 }

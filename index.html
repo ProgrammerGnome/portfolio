@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yadunand Kamath - Portfolio</title>
+    <title>Mark Kiraly - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,24 +12,31 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body class="min-h-screen bg-[#1a1a1a] text-white">
+  <div id="particles-js" class="fixed inset-0 w-full h-full -z-50"></div>
+  <div class="relative z-10 min-h-screen">
+      
     <header class="site-header">
         <div class="profile-section">
             <img src="assets/profile_img.png" alt="Profile Image" class="profile-image" />
             <div class="name-bio">
-                <h1 class="site-title">Yadunand Kamath</h1>
-                <p class="site-bio">C++ | Linux | Open-Source Contributor</p>
+                <h1 class="site-title">Ide jön a név</h1>
+                <p class="site-bio">Versatile Software Engineer</p>
+                <i class="fa-regular fa-envelope"></i> Contact: <a href="mailto:mark.kiraly.hu@gmail.com" class="email-link">mark.kiraly.hu@gmail.com</a>
+                <!--<p class="site-bio">Java | JS Frameworks | C++ | Machine Learning</p>-->
             </div>
             <div class="social-icons-container">
+                <a href="https://www.linkedin.com/in/yadunandkamath/" target="_blank" rel="noopener">
+                    <img src="assets/facebook.png" alt="Facebook" class="social-icon" />
+                </a>
                 <a href="https://www.linkedin.com/in/yadunandkamath/" target="_blank" rel="noopener">
                     <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon" />
                 </a>
                 <a href="https://github.com/yadunand-kamath" target="_blank" rel="noopener">
                     <img src="assets/github.png" alt="GitHub" class="social-icon" />
-                </a>
-                <a href="https://x.com/YadunandKamath" target="_blank" rel="noopener">
-                    <img src="assets/twitter.png" alt="Twitter" class="social-icon" />
                 </a>
             </div>
         </div>
@@ -37,274 +44,524 @@
         <nav class="site-nav">
             <div class="nav-toggle" id="navToggle">☰</div>
             <ul class="nav-links" id="navLinks">
-              <li><a href="#experience" class="nav-link">Experience</a></li>
-              <li><a href="#projects" class="nav-link">Projects</a></li>
-              <li><a href="#skills" class="nav-link">Skills</a></li>
-              <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Personal projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
             </ul>
           </nav>
     </header>
 
     <main class="site-content">
-        <section id="experience" class="content-section">
-            <h2>Experience</h2>
+        
+        <section id="about" class="content-section">
+            <h2>About</h2>
+            <i class="fa-regular fa-house"></i> Ordacsehi, Hungary
+            <h3>Welcome, dear visitor!</h3>
+            I am currently an MSc student in Computer Science.<br>
+            <b>During my BSc studies, my goal was to gain extensive real-world industry experience, which resulted in two years of professional experience.</b>
+            At the same time, <b>I enjoy developing open-source software as a hobby for over four years</b>, exploring creative ways to solve real-world challenges;
+            you can find my projects on GitHub, and some of my applications are also available in the Arch Linux User Repository.
+            Alongside these activities, <b>I’ve always tried to achieve more than the basic requirements in my university studies</b> - you can find more details about this in the Education section.<br>
+            You can find more about my current activities in the Skills section.<br><br>
+            Outside of work and IT, I enjoy nature photography, digital illustration in Krita, cycling, playing video games in a team, and I’m currently learning to play the synth.<br><br>
+            <b>Feel free to explore my portfolio sections!</b>
+        </section>
+        
+        <section id="experience" class="content-section hidden">
+            <h2>Professional experience</h2>
             <div class="experience-item">
                 <div class="item-header">                   
                     <div class="company-info"> 
-                        <img src="assets/capg-logo.png" alt="Capgemini Logo" class="company-logo">
-                        <h3 class="company-name">Capgemini</h3>
+                        <img src="assets/suit-logo.png" alt="suIT SOLUTIONS Logo" class="company-logo">
+                        <h3 class="company-name">suIT SOLUTIONS Ltd.</h3>
                     </div> 
                     <div class="date-group">
                         <img src="assets/date-icon.png" alt="Date Icon" class="calendar-icon">
-                        <span class="date-text">Aug 2022 - Feb 2024</span>
+                        <span class="date-text">July 2024 -  Jun 2025</span>
                     </div>
                 </div>
                 <div class="position-location-row"> 
-                    <span class="position">Associate Software II</span> 
+                    <span class="position">Software developer</span> 
                     <div class="location-group"> 
                         <img src="assets/location-icon.png" alt="Location Icon" class="location-icon">
-                        <span class="location-text">Gandhinagar, GJ</span>
+                        <span class="location-text">Pécs, remote</span>
                     </div>
                 </div>
                 <ul class="work-points">
-                    <li>Developed software for a medical product customized to meet the requirements of an international
-                        medical equipment company.</li>
-                    <li>Optimized the large codebase using Modern C++ features including <em>object-oriented programming (OOPS),
-                        STL containers & algorithms, smart pointers, multi-threading, file handling and exception handling</em>
-                        while adhering to industry best practices.</li>
-                    <li>Designed & deployed a <em>client-server Windows GUI application</em> using <b>MFC, Win32 API and gRPC</b> framework,
-                        automating workflows and reducing manual efforts by around 70%, improving team efficiency.</li>
-                    <li>Identified & resolved various software defects by performing root cause analysis and unit testing
-                        using <b>Visual Studio Debugger</b>, improving hospital operational efficiency and patient safety.</li>
-                    <li>Ensured high code quality by performing static code analysis using <b>Coverity</b>, and maintained
-                        detail-oriented documentation according to organizational guidelines.</li>
-                    <li>Followed the <b>Agile</b> methodology by tracking tasks, working in Sprints and collaborating with 
-                        cross-functional teams to ensure the completion of tasks within the deadline.</li>
-                    <li>Acquired proficiency in <b>Java</b> and <b>SQL</b> through formal training programs.</li>
-                    <li><b>Modern C++ (C++11/C++14/C++17), Visual Studio, MFC, Win32 API, gRPC, Java, SQL (PostgreSQL), Coverity,
-                        TortoiseSVN, Agile, Github</b></li>
+                    <li><b>Project Overview: </b>
+                        Searching, developing, and creating solutions for the problem of visual anomaly detection in quality assurance, within the framework of a startup-like project. I carried out the entire development process almost independently, from solution exploration to implementation. Although the project did not achieve business utilization at the management level, the final result is functional and served as the basis for my BSc thesis (which was graded Excellent(5), of course).
+                    </li>
+                    <li><b>Technologies: </b>Java, Spring, PostgreSQL, Python, Tensorflow, PyTorch, C#, Unity, Vuforia SDK, Docker, Web technologies (HTML, CSS, JS, JQuery, Vite.js)</li>
+                    <li><b>Project Overview: </b>
+                        In addition, I participated in a team-based Java backend development project with a microservice architecture.
+                    </li>
+                    <li><b>Technologies: </b>Java, Spring, MySQL, Redis, Microservices</li>
                 </ul>
             </div>
             <div class="experience-item">
                 <div class="item-header">
                     <div class="company-info"> 
-                        <img src="assets/vis-logo.jpg" alt="VI Solutions Logo" class="company-logo">
-                        <h3 class="company-name">VI Solutions</h3>
+                        <img src="assets/itq-logo.png" alt="InnoTeq Logo" class="company-logo">
+                        <h3 class="company-name">InnoTeq Ltd.</h3>
                     </div> 
                     <div class="date-group">
                         <img src="assets/date-icon.png" alt="Date Icon" class="calendar-icon">
-                        <span class="date-text">Aug 2021 - Oct 2021</span>
+                        <span class="date-text">Sept 2023 - Jun 2024</span>
                     </div> 
                 </div>
                 <div class="position-location-row">          
-                    <span class="position">Intern</span> 
+                    <span class="position">Software developer</span> 
                     <div class="location-group"> 
                         <img src="assets/location-icon.png" alt="Location Icon" class="location-icon">
-                        <span class="location-text">Bengaluru, KA</span>
+                        <span class="location-text">Pécs, remote</span>
                     </div>
                 </div>
                 <ul class="work-points">
-                    <li>Completed training in graphical programming using National Instruments' LabVIEW platform.</li>
-                    <li>Developed and implemented applications across multiple domains including <em>Embedded Systems, Image
-                        Processing, Machine Learning and Industrial IoT</em>.</li>
-                    <li><b>NI LabVIEW, Embedded Systems, Image Processing, Machine Learning, Industrial IoT</b></li>
+                    <li><b>Project Overview: </b>
+                        I participated in the development of a research-supporting forestry management software on the Java backend side.
+                    </li>
+                    <li><b>Technologies: </b>Java, Spring, PostgreSQL</li>
                 </ul>
             </div>
             <div class="experience-item">
                 <div class="item-header">
                     <div class="company-info"> 
-                        <img src="assets/uniq-logo.jpg" alt="UNIQ Technologies Logo" class="company-logo">
-                        <h3 class="company-name">UNIQ Technologies</h3>
+                        <img src="assets/rn-logo.png" alt="Rail Navigator Logo" class="company-logo">
+                        <h3 class="company-name">Rail Navigator Ltd.</h3>
                     </div> 
                     <div class="date-group">
                         <img src="assets/date-icon.png" alt="Date Icon" class="calendar-icon">
-                        <span class="date-text">Jan 2020</span>
+                        <span class="date-text">Jun 2023 - July 2024</span>
                     </div> 
                 </div>
                 <div class="position-location-row">          
-                    <span class="position">Intern</span> 
+                    <span class="position">Software developer intern</span> 
                     <div class="location-group"> 
                         <img src="assets/location-icon.png" alt="Location Icon" class="location-icon">
-                        <span class="location-text">Bengaluru, KA</span>
+                        <span class="location-text">Pécs, remote</span>
                     </div>
                 </div>
                 <ul class="work-points">
-                    <li>Completed training in embedded systems development, focusing on <em>microcontroller programming</em> and
-                        <em>hardware integration</em>.</li>
-                    <li>Worked with <b>Arduino IDE</b> and simulated various circuits using <b>Proteus</b>.</li>
-                    <li><b>Embedded C, Arduino, Proteus Design Suite</b></li>
+                    <li><b>Project Overview: </b>
+                        After deepening my practical foundations, I joined the development of a real system, where I implemented backend services, created unit tests, and processed unstructured documents using Python.
+                    </li>
+                    <li><b>Technologies: </b>Java, Spring, PostgreSQL, JUnit, Mockito, Web technologies (JQuery, Backbone.js), Python</li>
                 </ul>
             </div>
         </section>
     
         <section id="projects" class="content-section hidden">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">Open Source Software Development</h3>
-                    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
-                        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
-                    </a>
-                </div>
-                <p class="project-description">Active contributor in the open source community.</p>
-                    <p class="project-meta"><i>Technologies</i>: <b>C/C++, Bash, Makefiles, Linux, Vim, Git, Github</b></p>
-                <ul class="project-points">
-                    <li>Actively contributing to various open source projects by performing enhancements, fixing bugs, improving
-                        documentation, etc.</li>
-                </ul>
-                <!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
-            </div>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">SyncStream</h3>
-                    <a href="https://github.com/yadunand-kamath/SyncStream" class="github-link" target="_blank"> 
-                        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
-                    </a>
-                </div>
-                <p class="project-description">SyncStream is a real-time, multi-user chat application built for Windows. 
-                    It allows multiple users to connect to a central server and broadcast text messages in real time.</p>
-                    <p class="project-meta"><i>Technologies</i>: <b>C++, MFC(Microsoft Foundation Class), Winsock(Windows Sockets API),
-                        Multithreading, Visual Studio</b></p>
-                <ul class="project-points">
-                    <li>Developed a client-server application utilizing TCP sockets for reliable communication between users.</li>
-                    <li>Implemented multithreading on the server to concurrently handle multiple client connections, ensuring
-                        responsiveness and scalability.</li>
-                    <li>Designed a Windows user interface that allows users to connect to a server, enter a unique username,
-                        and broadcast text messages to other users in real time.</li>
-                </ul>
-                <!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
-            </div>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">Brain Fuel</h3>
-                    <a href="https://github.com/yadunand-kamath/brain-fuel" class="github-link" target="_blank"> 
-                        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
-                    </a>
-                </div>
-                <p class="project-description">Brain Fuel is an application that displays a random quote from a database of quotes.</p>
-                <p class="project-meta"><i>Technologies</i>: <b>Java, SQL(PostgreSQL), SpringBoot, JDBC, Thymeleaf, HTML, CSS, Bootstrap, Postman, REST API</b></p>
-                <ul class="project-points">
-                    <li>Created a database of 500+ quotes on PostgreSQL.</li>
-                    <li>Developed a REST API based backend application using Java, SpringBoot and JDBC.</li>
-                    <li>Designed a frontend webapp to display a random quote from the database using HTML,
-                        CSS, Thymeleaf and Bootstrap.</li>
-                </ul>
-                <!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
-            </div>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">Flight Ticket Booking System</h3>
-                    <a href="https://github.com/yadunand-kamath/Sprint1-Flight-ticket-booking-system" class="github-link" target="_blank"> 
-                        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
-                    </a>
-                </div>
-                <div class="project-association">
-                    <img src="assets/capg-logo.png" alt="Associated with Capgemini" class="association-logo">
-                    <span class="association-text">Associated with Capgemini</span>
-                </div>
-                <p class="project-description">A flight ticket booking application (backend) which provides users the freedom
-                    to browse flights, view the timings and flight fares, and book tickets for multiple passengers.</p>
-                <p class="project-meta"><i>Technologies</i>: <b>Java(JEE), SQL(Oracle), SpringBoot, JPA Hibernate, Postman, REST API</b></p>
-                <ul class="project-points">
-                    <li>Collaborated with a team to develop a Java - SpringBoot backend application with RESTful API services
-                        using Oracle database.</li>
-                    <li>Designed the application by using entities, services, implementations, DAO and controller.</li>
-                    <li>Implemented CRUD operations with Java Persistence API, Global Exception Handling, and performed API
-                        testing with Postman.</li>
-                </ul>
-                <!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
-            </div>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">Physical Layer Encryption For Wireless Communication System</h3>
-                    <a href="https://ieeexplore.ieee.org/document/10126923" class="github-link" target="_blank"> 
-                        <img src="assets/ieee-logo.png" alt="IEEE Xplore" class="ieee-icon">
-                    </a>
-                </div>
-                <div class="project-association">
-                    <img src="assets/rnsit-logo.png" alt="Associated with RNSIT" class="association-logo">
-                    <span class="association-text">Associated with RNSIT</span>
-                </div>
-                <p class="project-description">An implementation of physical layer encryption(PLE) on wireless communication
-                    systems to provide an additional layer of security.</p>
-                <p class="project-meta"><i>Technologies</i>: <b>Python, GNU Radio, Signal Processing, Cryptography, Computer Networks</b></p>
-                <ul class="project-points">
-                    <li>Collaborated on a research project implementing PLE techniques to enhance security in wireless communication systems.</li>
-                    <li>Developed the encryption algorithms using Python & GNU Radio, and conducted performance analysis by measuring Bit Error
-                        Rate (BER) for different PLE techniques and cryptographic key lengths.</li>
-                    <li>Published a research paper titled ”Implementation of Physical Layer Encryption For Wireless Communication System” in
-                        the <i>IEEE North Karnataka Subsection Flagship International Conference Journal</i>.</li>
-                </ul>
-                <!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
-            </div>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">MNIST Dataset Training in LabVIEW</h3>
-                    <!-- <a href="https://github.com/yadunand-kamath/network-scanner" class="github-link" target="_blank"> 
-                        <img src="assets/github-logo.png" alt="Github repo" class="github-icon">
-                    </a> -->
-                </div>
-                <div class="project-association">
-                    <img src="assets/vis-logo.jpg" alt="Associated with VI Solutions" class="association-logo">
-                    <span class="association-text">Associated with VI Solutions</span>
-                </div>
-                <p class="project-description">Training of MNIST dataset using LabVIEW.</p>
-                <p class="project-meta"><i>Technologies</i>: <b>LabVIEW, Image Processing, Machine Learning</b></p>
-                <ul class="project-points">
-                    <li>Developed a LabVIEW model to train the MNIST dataset.</li>
-                    <li>Reconstructed the image from the 3D array values in the dataset and trained the model.</li>
-                </ul>
-                <!-- <p class="project-link"><a href="https://www.hackster.io/yadu10a2000/network-wifi-scanner-using-bolt-iot-42e9ef" target="_blank">View Project</a></p> -->
-            </div>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">Compressed Sensing (CS)  Model for Data Acquisition & Reconstruction</h3>
-                    <!-- <a href="https://ieeexplore.ieee.org/document/10126923" class="github-link" target="_blank"> 
-                        <img src="assets/ieee-logo.png" alt="IEEE Xplore" class="ieee-icon">
-                    </a> -->
-                </div>
-                <div class="project-association">
-                    <img src="assets/rnsit-logo.png" alt="Associated with RNSIT" class="association-logo">
-                    <span class="association-text">Associated with RNSIT</span>
-                </div>
-                <p class="project-description">Development of CS model for data acquisition and reconstruction.</p>
-                <p class="project-meta"><i>Technologies</i>: <b>MATLAB, SIMULINK, Signal Processing</b></p>
-                <ul class="project-points">
-                    <li>Collaborated with a team to deliver a MATLAB-SIMULINK model for data compression and reconstruction using
-                        the concept of compressive sensing.</li>
-                    <li>Worked with audio signals to test the model.</li>
-                    <li>Presented a technical paper in the <i>2021 International Conference on Circuits, Controls &
-                        Communication (CCUBE)</i> at RNSIT, Bengaluru.</li>
-                </ul>
-                <!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
-            </div>
-            <div class="project-item">
-                <div class="project-header"> 
-                    <h3 class="project-title">Network Scanner</h3>
-                    <a href="https://github.com/yadunand-kamath/network-scanner" class="github-link" target="_blank"> 
-                        <img src="assets/github-logo.png" alt="Github repo" class="github-icon">
-                    </a>
-                </div>
-                <div class="project-association">
-                    <img src="assets/bolt-logo.jpg" alt="Associated with Bolt IoT" class="association-logo">
-                    <span class="association-text">Associated with Bolt IoT</span>
-                </div>
-                <p class="project-description">A script that scans a network and provides details of all hosts connected on that network.</p>
-                <p class="project-meta"><i>Technologies</i>: <b>Python, Scapy, Linux, Bolt IoT, Telegram API, Network Security</b></p>
-                <ul class="project-points">
-                    <li>Developed a Python-based network scanner that detects active devices on a local network by sending ARP
-                        requests and parsing responses using Scapy, providing IP and MAC addresses of connected devices.</li>
-                    <li>Integrated Bolt IoT for hardware automation.</li>
-                    <li>Implemented Telegram API alerts to send real-time scan results to a private bot, enabling remote
-                        monitoring.</li>
-                    <li>Designed a user-friendly Linux CLI for inputting target IPs and displaying results in a structured format.</li>
-                </ul>
-                <p class="project-link"><a href="https://www.hackster.io/yadu10a2000/network-wifi-scanner-using-bolt-iot-42e9ef" target="_blank">View Project</a></p>
-            </div>
+            <h2>Some personal projects</h2>
+            <h3>Currently I have ca. 50 GitHub repository.</h3><br>
+            <p>
+                My personal projects fall into three types:
+            </p>
+            <ul>
+                <li><b>Purely hobby</b></li>
+                <li>University projects enhanced with at <b>least 50% hobby</b> work</li>
+                <li>Purely university projects (completed as part of mandatory or mandatory elective courses)</li>
+            </ul>
+            <p>
+                Here are some of these projects.
+            </p>
+            <p><br></p>
+            
+            
+            
+<h3>Purely hobby projects:</h3>
+
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Implement new ideas to Anomalib fork</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank">
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+
+<p class="project-description"><b>Project overview: </b>
+A focused fork of an anomaly detection library, dedicated to enhancing and extending the best accuracy mode, the Patchcore model.
+</p>
+    <p class="project-meta"><i>Technologies</i>: Python (PyTorch)</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        For example Anomalib's PatchCore impementation extend a https://www.mdpi.com/1424-8220/24/5/1368 solutions and add to this architecture a CLAHE-algorithm.
+        Ilyen és ehhez hasonló kísérletezgetések vannak.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Tiny desktop applications for ArchLinux community</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="archlogo.png" alt="GitHub Repo" class="aur-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank">
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="archlogo.png" alt="GitHub Repo" class="aur-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank">
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+
+
+
+<p class="project-description"><b>1. Subproject overview: </b>muzplayer - Tiny music player app with custom randomization streaming algorithm.</p>
+    <p class="project-meta"><i>Technologies</i>: C++ (Qt6 framework), CMake</p>
+<ul class="project-points">
+    <li><b>Subproject description: </b>
+        A simple, tiny Qt-based music player application that supports ogg, mp3, wav, flac, m4a, and aac formats.
+        The player randomly selects files from the chosen folder and ensures that tracks played within the last 10 minutes are not repeated.
+    </li>
+</ul>
+<p class="project-description"><b>2. Subproject overview: </b>lingua - Speech translator primarily for language learning. Languages: English <-> Hungarian</p>
+    <p class="project-meta"><i>Technologies</i>: Python (PyQt6), openai-whisper</p>
+<ul class="project-points">
+    <li><b>Subproject description: </b>
+        This application is a real-time speech-to-text and translation tool that uses the OpenAI Whisper model for continuous audio stream processing.
+        It can transcribe and translate English ⇄ Hungarian conversations in near real time.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Libgen Desktop for ArchLinux community</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="archlogo.png" alt="GitHub Repo" class="aur-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>Simple Linux desktop app with GUI for Library Genesis website.</p>
+    <p class="project-meta"><i>Technologies</i>: JavaScript (Electron), html-processing</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        LibgenDesktop is a simple and fast desktop application to search, download, and manage books from the LibGen database. Features include multi-language support (english and hungarian),
+        easy navigation, download management, and a built-in search engine. Before downloading, the application searches for the server with the best ping.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">ATgame_fx - Logical game based on finite state machine</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>A Theory of Computation project in progress using Java and JavaFX GUI.</p>
+    <p class="project-meta"><i>Technologies</i>: Java (JavaFX, Maven)</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        This project is based on the topics of FSMs (Finite State Machines) and regular expressions.
+        The user can graphically edit an FSM (NFA or DFA) for a given regex pattern (or sample strings), and then verify its correctness. But the program can generate regex pattern with sample strings.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Full-stack web app for simplifying administrative processes</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>Travel expense form filling software to reduce administrative burden.</p>
+    <p class="project-meta"><i>Technologies</i>: Java (Spring framework), JasperReport, JavaScript (BackboneJS), Postgres, H2DB</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        This program allows users to quickly and electronically complete travel expense forms by automating repetitive manual tasks.
+        Users can fill out the forms through a web interface and then download and print the results in PDF format.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Problem solver (KöMaL journal)</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    <br><br>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>I solved advanced programming problems in KöMaL journal.</p>
+    <p class="project-meta"><i>Technologies</i>: Python, C++, Haskell, C++ with CUDA</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        Problem S.20 (Python):
+        This was my very first meaningful GitHub project. The task was to find the smallest possible circle covering n given points in the plane.
+        The tools for solving the problem are primitive, but precisely because of that, the approach is complex.<br>
+        Problem S.141 (Cpp/Haskell/Cpp+CUDA):
+        By creating a straightforward mathematical model from the problem, we attempt to parallelize it.
+        It is essential to emphasize that our goal is not merely calculation but rather the rapid computation, especially for large numbers. 
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+
+
+<br><h3>University projects enhanced with at least 50% hobby work:</h3>
+
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Java Swing apps with shared codebase</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-meta"><i>Technologies</i>: Java (Swing), XML, Google Cloud Platform</p>
+<p class="project-description"><b>1. Subproject overview: </b>Economical desktop app</p>
+<ul class="project-points">
+    <li><b>Subroject description: </b>
+        This application stores the specified expenses and income in an XML file or, in the case of an internet connection, on Google Drive.
+        In its absence, it stores the data on the computer. It generates statistics from these data, which can be converted to an Excel table in .xlsx format, allowing the user to export it. 
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+<p class="project-description"><b>2. Subproject overview: </b>Language dictionary desktop app</p>
+<ul class="project-points">
+    <li><b>Subproject description: </b>
+        This application provides a graphical interface to view and manage an XML-based dictionary.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+<p class="project-description"><b>3. Subproject overview: </b>Simple Chat app</p>
+<ul class="project-points">
+    <li><b>Subproject description: </b>
+    The application allows users to exchange messages in near real-time with Google Drive API, although this approach is slower than socket-based communication.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Dataracing-challenges, KutyAI</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>1. Subproject overview: </b>Dataracing challenges</p>
+    <p class="project-meta"><i>Technologies</i>: Python (NumPy, Pandas, scikit-learn, Optuna)</p>
+<ul class="project-points">
+    <li><b>Subproject description: </b>
+        Possible solutions for the 2022 and 2023 dataracing competitions using various methods and techniques.
+    </li>
+</ul>
+<p class="project-description"><b>2. Subproject overview: </b>KutyAI - Dog bread recognizer</p>
+    <p class="project-meta"><i>Technologies</i>: Python (Tensorflow, PyQt)</p>
+<ul class="project-points">
+    <li><b>Subproject description: </b>
+        This is a Python graphical application for dog breed recognition, featuring 420 breeds and 42,000 images.
+        For some reason, the model’s accuracy cannot exceed a certain percentage with this dataset, likely due to noisy images automatically scraped from the web—for example,
+        'Bolognese' could refer to both a dog breed and a dish. Nevertheless, the results are interpretable: purebred dogs are recognized very well, e.g.,
+        a Labrador is correctly identified as a Labrador about 90% of the time.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">The backend - various frontend for one backend</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>N/A</p>
+    <p class="project-meta"><i>Technologies</i>: Java (Spring framework), Postgres, JavaScript(VueJS, React, Angular)</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        This repository contains multiple frontends built using various frameworks, all connecting to the same backend. The backend is a system module that handles transactions.
+        I use this repository to showcase my basic frontend skills. It has helped me a lot in understanding the logic behind the most popular frontend frameworks.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">My previous portfolio website</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>N/A</p>
+    <p class="project-meta"><i>Technologies</i>: HTML, Bootstrap CSS, native JavaScript</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        A self-designed responsive website; however, I feel it no longer looks enough modern.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+
+
+<br><h3>
+Purely university projects<br>
+(completed as part of mandatory or mandatory elective courses):
+</h3>
+
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Numerical methods and visualization</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>1. Subproject overview: </b>Numerical algorithms in MATLAB</p>
+    <p class="project-meta"><i>Technologies</i>: MATLAB</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        Implemented a variety of numerical algorithms in MATLAB, including affine transforms, computer arithmetic, Gauss elimination, interpolation,
+        iterative methods for solving linear and nonlinear systems, numerical integration, and QR decomposition.
+    </li>
+</ul>
+<p class="project-description"><b>2. Subproject overview: </b>Visualization in VisIt software</p>
+    <p class="project-meta"><i>Technologies</i>: Python (NumPy, PyVista), VTK format, VisIt</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        This repository demonstrates how to compute the arc length of a function curve using VTK files,
+        in cases where symbolic (often irrational) integrals are difficult or impossible to calculate.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Data Analysis project and presentation</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>This project analyzes North Korea's geographic infrastructure and missile test data to visualize spatial relationships and launch statistics.</p>
+    <p class="project-meta"><i>Technologies</i>: Python (Pandas, GeoPandas, SQLAlchemy, etc.), Postgres, QGIS, PostGIS, shapefiles, </p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+        This repository contains materials for a data analysis project focusing on North Korea's geographic and missile test data, created as part of a university course (PTE TTK Data Analysis).
+        The project demonstrates skills in GIS analysis, PostgreSQL/PostGIS, Python data processing, and visualization using QGIS and Pandas.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+<!-- PROJECT CARD -->
+<div class="project-item">
+<div class="project-header"> 
+    <h3 class="project-title">Computer game development</h3>
+    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayadunand-kamath" class="github-link" target="_blank"> 
+        <img src="assets/github-logo.png" alt="GitHub Repo" class="github-icon">
+    </a>
+</div>
+<p class="project-description"><b>Project overview: </b>A video game mod development project.</p>
+    <p class="project-meta"><i>Technologies</i>: Java (Gradle), Fabric API, Blockbench</p>
+<ul class="project-points">
+    <li><b>Project description: </b>
+    	A Minecraft Fabric mod that visualizes sorting algorithms step by step using chests as arrays and item stacks as values, and also introduces a new mob.
+    </li>
+</ul>
+<!-- <p class="project-link"><a href="#" target="_blank">View Project</a></p> -->
+</div>
+            
+            
+        <p><b>Fun fact:</b><br>
+            I don’t have many personal web development projects because I worked on web development at my job. In my free time,
+            I focused on learning other interesting topics for variety and to avoid burnout (or bored out).
+        </p>    
         </section>
        
         <section id="skills" class="content-section hidden">
-            <h2>Skills</h2>
+            <h2>My attitude</h2>
+            <p>
+                In software development, <b>I focus on recognizing and analyzing real-world problems and finding and designing optimal solutions for them. Almost every problem requires the use of a different technology</b>, i.e., a tech stack, so I consider it <b>important to have a broad practical understanding of programming languages and frameworks</b>, as well as <b>the ability to quickly learn new ones</b>.
+            </p>
+            <h3>My Goals...</h3>
+            <p>
+                ...are to continually create or modernize practical software that combines web development with cutting-edge machine learning to improve industrial and business process efficiency.
+            </p>
+            <h3>What I Do</h3>
+            <p>
+                I am actively honing my software development skills by forking and modifying open-source libraries, which helps me improve my ability to understand complex systems, while deepening my knowledge of machine learning (e.g., deep learning), via university research projects.
+            </p>
+            <h2>My tech stacks</h2>
+            <p>
+                The following tech stack is grouped according to levels of professional proficiency.
+            </p>
+            <ul>
+            <h3><li>The professional tech stack I used at the companies:</li></h3>
+            <p>
+                Java, Spring framework, Test frameworks(JUnit, Mockito) Postgres, MySQL, Docker, Redis, Microservices, Python (with many libs, e.g.: NumPy, Tensorflow, PyTorch, Pandas, scikit-learn...),
+                Web technologies(HTML, CSS, JS)
+            </p>
+            </ul>
+            
+            <ul>
+                <li>
+                    <h3>The tech stack I used in open-source development:</h3>
+                    <p>C++, Qt framework, PyQt, Electron, Java Swing, JavaFX, QGIS/PostGIS</p>
+                </li>
+            </ul>
+            
+            <ul>
+                <li>
+                    <h3>My “Just for Fun”/Experimental Tech Stack:</h3>
+                    <p>Assembly (NASM-8086, MASM-611), CUDA, Haskell, Prolog, neo4j</p>
+                </li>
+            </ul>
+            
+            <ul>
+                <li>
+                    <h3>Additional skills: </h3>
+                    <p>
+                        In addition, <b>I am able to create basic frontends with various frameworks</b>, including Angular, React, Vue.js, Vite.js, etc.
+                        I am self-taught in the aforementioned skills, and <b>I believe they share a high degree of similarity in their project structure logic.</b>
+                    </p>
+                    <p>I have also used ABAP, C#, and Unity.</p>
+                </li>
+            </ul>
+            <p></p>
+            
+            
+            
+            <!--
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="card-inner">
@@ -355,56 +612,123 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="assets/java-logo.png" alt="Java Logo" />
-                        </div>
-                        <div class="card-back">
-                            <h4>Java</h4>
-                            <ul>
-                                <li>Enterprise Edition (JEE)</li>
-                                <li>Object-Oriented Programming (OOP)</li>
-                                <li>Collections Framework</li>
-                                <li>Java Database Connectivity (JDBC)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="assets/sql-logo.jpg" alt="SQL Logo" />
-                        </div>
-                        <div class="card-back">
-                            <h4>SQL</h4>
-                            <ul>
-                                <li>PostgreSQL</li>
-                                <li>Database Design</li>
-                                <li>CRUD Operations</li>
-                                <li>Querying</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="assets/github.png" alt="Github Logo" />
-                        </div>
-                        <div class="card-back">
-                            <h4>Github</h4>
-                            <ul>
-                                <li>Git & Github</li>
-                                <li>Version Control</li>
-                                <li>Branching, Merging & Pull requests</li>
-                                <li>Issue tracking</li>
-                                <li>Markdown Documentation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
+            
+            <p></p>
+            masodik - - Assembly, C, C++, CUDA, Qt framework
+            <p></p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/cpp-logo.png" alt="C++ Logo" />
+                        </div>
+                        <div class="card-back">
+                            <h4>C++</h4>
+                            <ul>
+                                <li>Modern C++ (11/14/17)</li>
+                                <li>Object-Oriented Design (OOP)</li>
+                                <li>Standard Template Library (STL)</li>
+                                <li>Memory Management</li>
+                                <li>Visual C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/mfc-logo.png" alt="MFC Logo" />
+                        </div>
+                        <div class="card-back">
+                            <h4>MFC</h4>
+                            <ul>
+                                <li>Windows desktop app development</li>
+                                <li>GUI Implementation</li>
+                                <li>Event handling & Message processing</li>
+                                <li>Multithreading</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/linux-logo.jpg" alt="Linux Logo" />
+                        </div>
+                        <div class="card-back">
+                            <h4>Linux</h4>
+                            <ul>
+                                <li>Arch/Parrot/Ubuntu</li>
+                                <li>Command Line Interface (CLI)</li>
+                                <li>File System</li>
+                                <li>Bash Scripting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <p></p>
+            harmadik - Machine learning, neural network based image processing
+            <p></p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/cpp-logo.png" alt="C++ Logo" />
+                        </div>
+                        <div class="card-back">
+                            <h4>C++</h4>
+                            <ul>
+                                <li>Modern C++ (11/14/17)</li>
+                                <li>Object-Oriented Design (OOP)</li>
+                                <li>Standard Template Library (STL)</li>
+                                <li>Memory Management</li>
+                                <li>Visual C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/mfc-logo.png" alt="MFC Logo" />
+                        </div>
+                        <div class="card-back">
+                            <h4>MFC</h4>
+                            <ul>
+                                <li>Windows desktop app development</li>
+                                <li>GUI Implementation</li>
+                                <li>Event handling & Message processing</li>
+                                <li>Multithreading</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/linux-logo.jpg" alt="Linux Logo" />
+                        </div>
+                        <div class="card-back">
+                            <h4>Linux</h4>
+                            <ul>
+                                <li>Arch/Parrot/Ubuntu</li>
+                                <li>Command Line Interface (CLI)</li>
+                                <li>File System</li>
+                                <li>Bash Scripting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            -->
+            
         </section>
 
         <section id="education" class="content-section hidden"> <!-- Add this section -->
@@ -412,25 +736,72 @@
             <div class="education-item">
                 <div class="edu-header">
                     <div class="institute-info"> 
-                        <img src="assets/rnsit-logo.png" alt="University Logo" class="edu-logo">
-                        <h3 class="institution-name">R.N.S. Institute of Technology (RNSIT)</h3>
+                        <img src="assets/PE-logo.jpg" alt="University Logo" class="edu-logo">
+                        <h3 class="institution-name">University of Pannonia, Faculty of Information Technology</h3>
                     </div>
-                    <div class="location-group"> 
-                        <img src="assets/location-icon.png" alt="Location Icon" class="location-icon">
-                        <span class="location-text">Bengaluru, KA</span>
-                    </div>
+                    
                 </div>
                 <div class="edu-details-row"> 
-                    <span class="qualification">Bachelor of Engineering in Electronics & Communication</span>
-                     <div class="date-group"> <img src="assets/date-icon.png" alt="Date Icon" class="calendar-icon">
-                        <span class="date-text">2018 - 2022</span>
+                    <span class="qualification"><b>MSc</b>, Master of Science in Computer Science</span>
+                    <div class="location-group"> 
+                        <img src="assets/location-icon.png" alt="Location Icon" class="location-icon">
+                        <span class="location-text">Veszprém</span>
+                    </div>
+                    <div class="date-group"> <img src="assets/date-icon.png" alt="Date Icon" class="calendar-icon">
+                        <span class="date-text">2025 - 2027</span>
                     </div>
                 </div>
                 <ul class="edu-points">
-                    <li><i>CGPA</i>: <b>8.61/10.0</b></li>
-                    <li><i>Activities</i>: Member of IEEE Society, Technical Events Organizer, Member of the college football team.</li>
+                    <!--<li><i>CGPA</i>: <b>8.61/10.0</b></li>-->
+                    <li><i>Activities</i>: Student Research Conference of the Faculty (KTDK)</li>
+                    <!--<li><i>Focus</i>:<br>– artificial intelligence<br>– advanced mathematics in computer science and machine learning</li>-->
+                    <i><b>The focus of the MSc program includes:</b></i>
+                    <ol>
+                        - Advanced Machine Learning<br>
+                        - Big Data technologies<br>
+                        - Applied math for modelling modern industrial and financial challenges
+                    </ol>
                 </ul>
             </div>
+            
+            <div class="education-item">
+                <div class="edu-header">
+                    <div class="institute-info"> 
+                        <img src="assets/PTE-logo.png" alt="University Logo" class="edu-logo">
+                        <h3 class="institution-name">University of Pécs, Faculty of Sciences</h3>
+                    </div>
+                    
+                </div>
+                <div class="edu-details-row"> 
+                    <span class="qualification"><b>BSc</b>, Bachelor of Science in Computer Science</span>
+                    <div class="location-group"> 
+                        <img src="assets/location-icon.png" alt="Location Icon" class="location-icon">
+                        <span class="location-text">Pécs</span>
+                    </div>
+                    <div class="date-group"> <img src="assets/date-icon.png" alt="Date Icon" class="calendar-icon">
+                        <span class="date-text">2021 - 2025</span>
+                    </div>
+                </div>
+                <ul class="edu-points">
+                    <li><i>Activities</i>: Magazine of Students of University of Pécs, "KórházSuli" courses</li>
+                    <li><i>Overall classification</i>: <b>Good (4.18)</b></li>
+                    <li><i>Academic Achievements</i>: </li>
+                    - I completed several of the core Mathematics BSc courses<br>&nbsp;&nbsp;in addition to the standard Computer Science curriculum.<br>
+                    - I <b>completed 220 credits</b> in a <b>180-credit BSc</b> program.<br>
+                    - Cumulative Corrected Credit Index: <b>4.70</b>
+                    <li><i>Other information</i>: I had two passive semesters.</li>
+                </ul>
+            </div>
+            
+            <h3>My language proficiency:</h3>
+            <ul>
+                <li><b>Hungarian</b> - Native proficiency</li>
+                <li><b>English</b> - <b>Reading</b> professional; limited working in <b>speaking</b>; portfolio-level <b>writing</b></li>
+                <li><b>German</b> - Limited working proficiency in all languages skills</li>
+            </ul>
+            
+            
+            <!--
             <h2>Courses</h2>
             <div class="course-item">
                 <div class="course-header">
@@ -493,8 +864,97 @@
                     <li><i>Skills</i>: <b>Python - basics, syntax, semantics, core</b></li>
                 </ul>
             </div>
-        </section>    
+            -->
+        
+        </section>
     </main>
     <script src="script.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>-->
+    <script src="particles.min.js"></script>
+    <script>
+        function initParticles() {
+            particlesJS('particles-js', {
+              particles: {
+                number: {
+                  value: 80,
+                  density: {
+                    enable: true,
+                    value_area: 800
+                  }
+                },
+                color: {
+                  value: '#ffffff'
+                },
+                shape: {
+                  type: 'circle',
+                  stroke: {
+                    width: 0,
+                    color: '#000000'
+                  }
+                },
+                opacity: {
+                  value: 0.5,
+                  random: true,
+                  anim: {
+                    enable: true,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false
+                  }
+                },
+                size: {
+                  value: 3,
+                  random: true,
+                  anim: {
+                    enable: false
+                  }
+                },
+                line_linked: {
+                  enable: true,
+                  distance: 150,
+                  color: '#ffffff',
+                  opacity: 0.4,
+                  width: 1
+                },
+                move: {
+                  enable: true,
+                  speed: 2,
+                  direction: 'none',
+                  random: true,
+                  straight: false,
+                  out_mode: 'out',
+                  bounce: false
+                }
+              },
+              interactivity: {
+                detect_on: 'canvas',
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: 'repulse'
+                  },
+                  onclick: {
+                    enable: true,
+                    mode: 'push'
+                  },
+                  resize: true
+                },
+                modes: {
+                  repulse: {
+                    distance: 100,
+                    duration: 0.4
+                  },
+                  push: {
+                    particles_nb: 4
+                  }
+                }
+              },
+              retina_detect: true
+            });
+        }
+        
+        // Initialize when page loads
+        window.addEventListener('load', initParticles);
+    </script>
 </body>
 </html>
