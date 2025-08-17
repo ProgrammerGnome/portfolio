@@ -60,17 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
             defaultNavLink.classList.add('active');
         }
     }
-
-    // Add functionality for flipping skill cards on click
-    const skillCards = document.querySelectorAll('.skill-card');
-    skillCards.forEach(card => {
-        card.addEventListener('click', (event) => {
-            card.addEventListener('click', () => {
-                card.classList.toggle('flipped');
-            });
-        });
-    });
-
-    
-
 });
