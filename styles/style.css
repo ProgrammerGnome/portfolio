@@ -388,6 +388,21 @@ body {
     margin-right: 10px; /* Space between title and icon */
     min-width: 0; /* Allow title to shrink */
     word-wrap: break-word; /* Ensure title wraps */
+    a {
+        color: skyblue;
+        text-decoration: none;
+    }
+    a:hover {
+        color: red;
+    }
+}
+
+a {
+    color: #9090B0;
+    text-decoration: underline;
+}
+a:hover {
+    color: red;
 }
 
 .project-item .github-link {
