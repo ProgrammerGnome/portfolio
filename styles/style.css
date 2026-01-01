@@ -83,12 +83,16 @@ body {
 }
 
 .site-title {
-    font-family: 'Press Start 2P', cursive; /* Pixel font for title */
+    /*font-family: 'Space Mono', cursive; /* Pixel font for title */
     font-size: 2.2em; /* Adjust font size */
     margin: 0 0 5px 0;
     color: #A9A9CB; /* Light Blue color for title (Midnight Minimal) */
     text-shadow: 2px 2px #1F1F4D; /* Medium Blue text shadow (Midnight Minimal) */
     word-wrap: break-word; /* Prevent long names from overflowing */
+    /*PRO TIPP:*/
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    /*letter-spacing: -1px;*/
 }
 
 .site-bio {
@@ -238,7 +242,7 @@ body {
 
 /* Adjust h2 inside content sections */
 .content-section h2 {
-    font-family: 'Press Start 2P', cursive; /* Pixel font for section titles */
+    /*font-family: 'Space Mono', cursive; /* Pixel font for section titles */
     font-size: 1.8em;
     color: #9090B0; /* Light Blue color (Midnight Minimal) */
     text-shadow: 1px 1px #0A0A1F; /* Very Dark Blue text shadow (Midnight Minimal) */
@@ -246,6 +250,10 @@ body {
     margin-bottom: 20px;
     border-bottom: 1px solid #9090B0; /* Light Blue underline (Midnight Minimal) */
     padding-bottom: 10px;
+    /*PRO TIPP:*/
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* Styling for Experience Section Items */
